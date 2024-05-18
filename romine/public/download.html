@@ -9,9 +9,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
         body, html {
+            display: flex;
             height: 100%;
             margin: 0;
-            display: flex;
             justify-content: center;
             align-items: center;
             background-color: #f4f4f4;
@@ -48,6 +48,23 @@
         form {
             margin: 10px 0;
         }
+
+        .styled-link {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: large;
+            transition: background-color 0.5s;
+        }
+
+        .styled-link:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +76,7 @@
         <form action="./assets/romine_server.zip">
             <button type="submit" download><i class="bi bi-hdd-stack"></i> Download Romine for Server Uses</button>
         </form>
+        <a href="docs.html" class="styled-link"><i class="bi bi-book"></i> Documentation for UI</a>
     </div>
 </body>
 </html>
