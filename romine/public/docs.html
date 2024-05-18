@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Control Panel Documentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon.ico">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #bb86fc;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin: 5px 0;
+            padding: 10px 15px;
+            color: #121212;
+            background-color: #bb86fc;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .input-field {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #2c2c2c;
+            border: 1px solid #3c3c3c;
+            border-radius: 4px;
+            color: #e0e0e0;
+        }
+        .label {
+            margin: 5px 0;
+        }
+        .icon {
+            margin-right: 5px;
+        }
+        .ui-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="bi bi-robot"></i> Bot Control Panel Documentation</h1>
+        <p>This documentation provides an overview of the UI components and functionality of the Bot Control Panel, which is built using Python's Tkinter and Selenium.</p>
+        
+        <h2><i class="bi bi-ui-checks-grid"></i> UI Components</h2>
+        
+        <h3><i class="bi bi-fonts"></i> Labels</h3>
+        <p>The application has several labels to display information:</p>
+        <ul>
+            <li><code>Count</code>: Displays the number of searches performed.</li>
+            <li><code>Point(s)</code>: Displays the current points.</li>
+            <li><code>Should Increment by</code>: Displays the number of points that should have been added during the session.</li>
+        </ul>
+        
+        <h3><i class="bi bi-input-cursor"></i> Entry</h3>
+        <p>The application includes an entry field for setting the wait time between searches:</p>
+        <ul>
+            <li><code>Wait Time (seconds)</code>: Accepts the wait time in seconds (default is 4.5 seconds).</li>
+        </ul>
+        
+        <h3><i class="bi bi-hand-index-thumb"></i> Buttons</h3>
+        <p>The application includes two buttons:</p>
+        <ul>
+            <li><code>Start Bot</code>: Starts the bot. This button initiates the search process using a separate thread.</li>
+            <li><code>Stop Bot
+                
+            </code>: Stops the bot. This button sets a flag to stop the search process.</li>
+        </ul>
+        
+        <h2><i class="bi bi-image"></i> UI Image</h2>
+        <img src="./assets/ui.png" alt="Bot Control Panel UI" class="ui-image">
+        
+        <h2><i class="bi bi-gear"></i> Functionality</h2>
+        
+        <h3><i class="bi bi-play-circle"></i> Starting the Bot</h3>
+        <p>When the <code>Start Bot</code> button is pressed, the bot starts performing searches based on randomly generated words.</p>
+        
+        <h3><i class="bi bi-stop-circle"></i> Stopping the Bot</h3>
+        <p>When the <code>Stop Bot</code> button is pressed, the bot stops performing searches.</p>
+        
+        <h3><i class="bi bi-arrow-repeat"></i> Updating Labels</h3>
+        <p>The application updates the labels to display the latest search count, current points, and points added during the session.</p>
+    </div>
+</body>
+</html>
