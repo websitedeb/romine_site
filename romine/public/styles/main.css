@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+#header {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    font-family: "Fira Code", monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(255, 222, 178);
+    justify-content: center; 
+}
+
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #303030 #1e1e1e;
+}
+
+#bg {
+    background-color: rgb(32, 32, 32);
+    background-size: cover;
+    padding: 20px;
+}
+
+body {
+    color: white;
+    background-color: rgb(19, 19, 19);
+    overflow-y: scroll;
+    scrollbar-color: d;
+}
+
+#header_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#footer{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    font-family: "Fira Code", monospace;
+    margin: 0px;
+}
+
+.Q{
+    color: white;
+    font-size: large;
+    font-family: "Fira Code", monospace;
+    font-weight: bold;
+}
+
+.A{
+    color: white;
+    font-size: medium;
+    font-family: "Fira Code", monospace;
+}
+
+#cap{
+    display: block;
+    justify-content: center;
+    background-color: black;
+    margin: 10px;
+    min-height: 540px;
+    border-radius: 10px;
+}
+
+#div1, #div2{
+    justify-content: center;
+    display: flex;
+}
+
+.card{
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+    padding: 20px; /* Adjust padding as needed */
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    transition: 0.5s;
+}
+
+#q{
+    border-bottom: 1px solid rgb(19, 19, 19);
+}
+
+.card:hover{
+    background-color: #303030;
+    box-shadow: none;
+    width: 320px;
+    height: 220px;
+}
+
+#fade{
+    display: none;
+}
+
+#Download {
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#Download h4 {
+    color: white;
+}
+
+#Download form {
+    margin-top: 20px;
+}
+
+#Download button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Download button[type="submit"]:hover {
+    background-color: #0056b3;
+}
